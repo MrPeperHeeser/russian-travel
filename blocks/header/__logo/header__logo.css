@@ -2,6 +2,6 @@
     display: flex;
     background-image: url("../../../images/header/header-logo.svg");
     width: 176px;
-    height: 52px;
+    height: auto;
     background-size: cover;
 }

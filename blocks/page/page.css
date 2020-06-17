@@ -1,7 +1,7 @@
 .page {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    min-width: 100%;
     font-family: 'Inter', Arial, sans-serif;
     background-color: #2A2C2F;
     -webkit-font-smoothing: antialiased;
@@ -12,36 +12,8 @@
     text-rendering: auto;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 320px) {
     .page {
-        min-width: 1280px;
-        max-width: 1280px;
-    }
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    .page {
-        min-width: 1024px;
-        max-width: 1280px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .page {
-        min-width: 768px;
-        max-width: 1024px;
-    }
-}
-
-@media screen and (min-width: 425px) and (max-width: 768px) {
-    .page {
-        min-width: 425px;
-        max-width: 768px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .page {
-        max-width: 425px;
+        min-width: 320px;
     }
 }

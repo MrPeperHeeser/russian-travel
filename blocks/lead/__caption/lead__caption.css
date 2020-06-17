@@ -1,7 +1,7 @@
 .lead__caption {
     display: flex;
     width: 100%;
-    height: 14px;
+    height: auto;
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
