@@ -9,10 +9,7 @@
 .place {
     display: grid;
     height: auto;
-    width: 100%;
     margin-top: 80px;
-    grid-template-columns: minmax(auto, 45%) 1fr;
-    grid-template-rows: minmax(76px, auto) 1fr;
     grid-column-gap: 40px;
     grid-row-gap: 48px;
 }
@@ -21,15 +18,30 @@
     margin: 0;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1280px) {
     .place {
-        margin-top: 72px;
+        grid-template-columns: minmax(auto, 460px) minmax(auto, 480px);
+        grid-template-rows: minmax(76px, auto) 1fr;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
     .place {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(auto, 440px) minmax(auto, 456px);
+        grid-template-rows: minmax(76px, auto) 1fr;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .place {
+        grid-template-columns: minmax(auto, 340px) minmax(auto, 352px);
+        grid-template-rows: minmax(76px, auto) 1fr;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .place {
+        grid-template-columns: minmax(auto, 320px);
         grid-template-rows: minmax(76px, auto) 1fr;
         margin-top: 48px;
     }

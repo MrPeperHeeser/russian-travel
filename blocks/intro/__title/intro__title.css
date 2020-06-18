@@ -1,6 +1,6 @@
 .intro__title {
     display: flex;
-    width: 100%;
+    width: 690px;
     height: auto;
     font-style: normal;
     font-weight: 900;
@@ -10,8 +10,15 @@
     margin: 0 0 40px;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .intro__title {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro__title {
+        width: 288px;
         font-size: 32px;
         line-height: 35px;
     }

@@ -3,7 +3,7 @@
     flex-direction: column;
     list-style-type: none;
     color: white;
-    width: 100%;
+    width: 690px;
     height: auto;
     margin: 0;
     padding: 0;
@@ -11,4 +11,18 @@
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .intro__list {
+        width: 720px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .intro__list {
+        width: 288px;
+        font-size: 32px;
+        line-height: 35px;
+    }
 }
