@@ -6,28 +6,19 @@
 .intro {
     display: flex;
     flex-direction: column;
-    width: 690px;
     height: auto;
-    margin-top: 92px;
-    margin-bottom: 92px;
+    margin: 92px auto;
 }
 
 @media screen and (min-width: 1280px) {
     .intro {
-        margin-left: 148px;
-        margin-right: 442px;
-    }
-}
-
-@media screen and (max-width: 1279px) {
-    .intro {
-        margin-right: auto;
-        margin-left: auto;
+        width: 984px;
     }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     .intro {
+        width: 928px;
         margin-top: 77px;
         margin-bottom: 107px;
     }
